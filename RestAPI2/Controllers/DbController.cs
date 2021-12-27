@@ -14,6 +14,7 @@ namespace RestAPI2.Controllers
         // GET: DbController/Details/5
         public ActionResult Details(int id)
         {
+            //return id
             return View();
         }
 
