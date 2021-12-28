@@ -28,7 +28,14 @@ steps:
 
 - task: DotNetCoreCLI@2
   inputs:
+    command: 'restore'
+    projects: '$(Build.SourcesDirectory)/**/*.csproj'
+
+- task: DotNetCoreCLI@2
+  inputs:
     command: 'build'
+    projects: '$(Build.SourcesDirectory)/**/*.csproj'
+
 
 - task: VSTest@2
   inputs:
