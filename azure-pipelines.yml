@@ -20,8 +20,8 @@ steps:
 
 - task: DotNetCoreCLI@2
   inputs:
-    version: 6.0.x
-    command: 'build'
+    packageType: 'sdk'
+    version: '6.0.x'    
     
 - task: NuGetCommand@2
   inputs:
